@@ -1,0 +1,240 @@
+/* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #282c34; /* Color of the track */
+    border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the thumb */
+    border-radius: 7px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #686868; /* Color of the thumb on hover */
+}
+
+body{
+    background: rgb(25, 25, 29);
+    color:aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: rgb(16, 16, 17);
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+    padding: 25px 0px 10px 20px;
+    border-bottom: 1px solid rgb(58, 58, 58)
+}
+
+header .logo a{
+    background-image: url("Images/favicon128.png");
+    background-size: 68px;
+    display: inline-block;
+    height: 68px;
+    width: 68px;
+}
+
+header .title a{
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+    color: rgb(83, 216, 65);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', monospace;
+}
+
+ul.titlebox{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.titlebox li{
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 550%;
+    font-weight: bold;
+    -webkit-text-stroke: 2px #ffffff;
+    text-shadow: 3px 2px 2px rgba(9, 255, 42, 0.377);
+}
+
+ul.navigation{
+    margin: 0;
+    padding: 0px 92px;
+    list-style: none;
+}
+
+ul.navigation li{
+    display: inline-block;
+    padding: 10px 0px;
+    margin-right: 30px;
+    color: rgb(179, 179, 179);
+    font-size: 150%;
+}
+
+ul.navigation li a {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 1px 0px rgba(51, 51, 51, 0.719);
+}
+
+p{
+    color: #d3d3d3;
+    margin: 20px 50px;
+    font-size: 23px;
+}
+
+pre.code-block,
+pre.result-block {
+    overflow-x: auto;  /* Enable horizontal scroll if needed */
+    white-space: pre-wrap;  /* Prevent line breaks */
+}
+
+pre.code-block{
+    margin: 0px 50px 20px 50px;
+    max-width: 1000px;
+    background-color: #282c34; /* Code block background color */
+    color: #b4bdcf; /* Adjust this value for the text color */
+    padding: 15px 0px; /* Padding around the code block */
+    border-radius: 0px 0px 9px 9px; /* Rounded corners for a nicer look */
+    outline: 1px solid rgb(58, 58, 58);
+}
+
+pre.result-block{
+    max-width: 700px;
+    margin: 0px 50px 20px 50px;
+    background-color: #3f3d36; /* Code block background color */
+    color: #fff098; /* Adjust this value for the text color */
+    padding: 15px 0px; /* Padding around the code block */
+    border-radius: 0px 0px 9px 9px; /* Rounded corners for a nicer look */
+    outline: 1px solid rgb(78, 78, 78);
+}
+
+code {
+    display: block; /* Make the code block a block-level element */
+    font-family: 'consolas','Courier New', Courier, monospace; /* Use a monospaced font for code */
+    font-size: 17px; /* Adjust the font size */
+    margin: 0px 35px;
+    white-space: pre; /* Preserve line breaks and wrap long lines */
+    font-weight: normal;
+}
+
+h1{
+    margin: 40px 50px 20px 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color:#d1cc99;
+}
+
+.sticky-h2 {
+    max-width: 982px;
+    border-radius: 9px 9px 0px 0px;
+    background-color: #494d55;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    color: rgb(153, 189, 149);
+    margin-left: 49px;
+    margin-right: 49px;
+    margin-bottom: 1px;
+    padding: 7px 10px;
+    font-size: 18px;
+    font-family: 'consolas','Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.sticky-h2_ {
+    max-width: 682px;
+    border-radius: 9px 9px 0px 0px;
+    background-color: #494d55;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    color: rgb(153, 189, 149);
+    margin-left: 49px;
+    margin-right: 49px;
+    margin-bottom: 1px;
+    padding: 7px 10px;
+    font-size: 18px;
+    font-family: 'consolas','Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+ul.resource_list{
+    margin: 10px 50px 0px 50px;
+    padding: 0;
+    list-style: none;
+}
+
+ul li.resource_list_logo_python a{
+    background-image: url("Images/pythonlogo64.png");
+    background-size: 32px;
+    display: inline-block;
+    height: 32px;
+    width: 30px;
+}
+
+ul li.resource_list_logo_cplusplus a{
+    background-image: url("Images/cpluspluslogo.png");
+    background-size: 32px;
+    display: inline-block;
+    height: 32px;
+    width: 30px;
+}
+
+ul li.resource_list_text a{
+    position: relative;
+    top: -9px;
+    text-decoration: none;
+    color: rgb(185, 182, 173);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', monospace;
+}
+
+ul.resource_list li{
+    display: inline-block;
+    padding: 0;
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+p.subpara{
+    max-width: 1000px;
+    color: #a8a4af;
+    margin: 0px 50px 20px 50px;
+    font-size: 20px;
+}
+
+.specialcode{
+    color: rgb(146, 219, 140);
+}
+
+.specialcode2{
+    color: rgb(235, 235, 235);
+}
+
+ul.languages{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+div.languagesupportlogo{
+    background-image: url("Images/pythonlogo.png");
+    background-size: 128px;
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+}
+
+.codeWord{
+    font-family: 'consolas','Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(168, 108, 202);
+}
+

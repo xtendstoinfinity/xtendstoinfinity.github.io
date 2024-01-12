@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul class="titlebox">
+            <li class="logo"><a href="index.html"></a></li>
+            <li class="title"><a href="index.html">BitTheory</a></li>
+        </ul>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+        </ul>  
+    </header>
+    <section class="content">
+        <h1>Python Projects</h1>
+    
+        <p>1. Armstrong number checker:</p>
+        <p class="subpara">This program checks if a number is an Armstrong number or not.</p>
+        <div class="code-section">
+            <h2 class="sticky-h2">ArmstrongNumberChecker.py</h2>
+            <pre class="code-block">
+<code>print("WELCOME TO ARMSTRONG NUMBER CHECKER")
+num = input("Enter a number: ")
+length = len(num)
+ListOfDigits = list(num)
+sum = 0
+
+for digit in ListOfDigits:
+    sum += pow(int(digit), length)
+
+if sum == int(num):
+    print(num, 'is an armstrong number')
+else:
+    print(num, 'is not an armstrong number')
+</code>
+</pre>
+</div>
+    </section>
+    <section>
+        <div class="code-section">
+            <h2 class="sticky-h2_">Example Output</h2>
+        <pre class="result-block">
+<code><span class="specialcode">#Case 1: user enters 12!</span>
+
+<span class="specialcode2">></span> WELCOME TO ARMSTRONG NUMBER CHECKER
+<span class="specialcode2">></span> Enter a number: <span class="specialcode">12</span>
+<span class="specialcode2">></span> 12 is not an armstrong number
+
+<span class="specialcode">#Case 2: user enters 153!</span>
+
+<span class="specialcode2">></span> WELCOME TO ARMSTRONG NUMBER CHECKER
+<span class="specialcode2">></span> Enter a number: <span class="specialcode">153</span>
+<span class="specialcode2">></span> 12 is an armstrong number
+</code>
+</pre>
+</div>
+    </section>
+    <section class="content">
+
+        <p>2. Armstrong number generator:</p>
+        <p class="subpara">This program generates all possible Armstrong numbers from 0 to 100,000.</p>
+
+        <div class="code-section">
+            <h2 class="sticky-h2">ArmstrongNumberGenerator.py</h2>
+        <pre class="code-block">
+<code>print("WELCOME TO ARMSTRONG NUMBER GENERATOR")
+
+for i in range(0,100000):
+    length = len(str(i))
+    ListOfDigits = list(str(i))
+    sum = 0
+
+    for digit in ListOfDigits:
+        sum += pow(int(digit), length)
+    if sum == i:
+        print(i)
+</code>
+</pre>
+</div>
+    </section>
+    <section>
+
+        <div class="code-section">
+            <h2 class="sticky-h2_">Output</h2>
+        <pre class="result-block">
+<code><span class="specialcode2">></span> WELCOME TO ARMSTRONG NUMBER GENERATOR
+<span class="specialcode2">></span> 0
+<span class="specialcode2">></span> 1
+<span class="specialcode2">></span> 2
+<span class="specialcode2">></span> 3
+<span class="specialcode2">></span> 4
+<span class="specialcode2">></span> 5
+<span class="specialcode2">></span> 6
+<span class="specialcode2">></span> 7
+<span class="specialcode2">></span> 8
+<span class="specialcode2">></span> 9
+<span class="specialcode2">></span> 153
+<span class="specialcode2">></span> 370
+<span class="specialcode2">></span> 371
+<span class="specialcode2">></span> 407
+<span class="specialcode2">></span> 1634
+<span class="specialcode2">></span> 8208
+<span class="specialcode2">></span> 9474
+<span class="specialcode2">></span> 54748
+<span class="specialcode2">></span> 92727
+<span class="specialcode2">></span> 93084
+</code>
+</pre>
+</div>
+    </section>
+    <section class="content">
+
+        <p>3. Binary-System to Decimal-System converter:</p>
+        <p class="subpara">This program converts binary numbers(Eg. 1001) to regular numbers or decimal-system numbers(Eg. 9).</p>
+        <p class="subpara">You can also do this by using Python's built-in <span class="codeWord">'int()'</span> function as: <span class="codeWord">int("Your-Binary-String-Here", 2)</span></p>
+
+        <div class="code-section">
+            <h2 class="sticky-h2">BinaryToDecimalConverter.py</h2>
+        <pre class="code-block">
+<code>num = input("Enter a binary number: ")
+listOfBinaryDigits = list(num)
+power_ = len(num)
+summedResult = 0
+
+for i in listOfBinaryDigits:
+    power_ -= 1
+    if int(i) == 1:
+        summedResult += pow(2, power_)
+    elif int(i) == 0:
+        summedResult += 0
+    else:
+        pass
+
+print(num, "in decimal system:", summedResult)
+</code>
+</pre>
+</div>
+    </section>
+    <section>
+        <div class="code-section">
+            <h2 class="sticky-h2_">Example Output</h2>
+        <pre class="result-block">
+<code><span class="specialcode">#Example: user enters 10010!</span>
+
+<span class="specialcode2">></span> Enter a binary number: <span class="specialcode">10010</span>
+<span class="specialcode2">></span> 10010 in decimal system: 18
+</code>
+</pre>
+</div>
+    </section>
+    <section class="content">
+
+        <p>4. Decimal-System to Binary-System converter:</p>
+        <p class="subpara">This program converts regular numbers or decimal-system numbers(Eg. 18) to binary numbers(Eg. 10010).</p>
+        <p class="subpara">You can also do this by using Python's built-in <span class="codeWord">'bin()'</span> function as: <span class="codeWord">bin("Your-Decimal-Number-Here")</span></p>
+
+        <div class="code-section">
+            <h2 class="sticky-h2">DecimalToBinaryConverter.py</h2>
+        <pre class="code-block">
+<code>num = int(input("Enter a number: "))
+power = -1
+divisorIndex = -1
+divisor = 1
+binary_value = ""
+max = 0
+
+while max <= num:
+    power += 1
+    max = pow(2,power)
+    
+n = max/2
+temp = num
+
+while (n/divisor) > 1:
+    divisorIndex += 1
+    divisor = pow(2, divisorIndex)  
+    if temp//(n/divisor) == 1:
+        binary_value = binary_value + "1"
+        temp -=(n/divisor)
+    elif temp//(n/divisor) == 0:
+        binary_value = binary_value + "0"
+    else:
+        pass
+
+print(num, "in binary system:", binary_value)
+</code>
+</pre>
+</div>
+    </section>
+    <section>
+        <div class="code-section">
+            <h2 class="sticky-h2_">Example Output</h2>
+        <pre class="result-block">
+<code><span class="specialcode">#Example: user enters 27!</span>
+
+<span class="specialcode2">></span> Enter a number: <span class="specialcode">27</span>
+<span class="specialcode2">></span> 27 in decimal system: 11011
+</code>
+</pre>
+</div>
+    </section>
+    <section class="content">
+
+        <p>5. Fibonacci Series:</p>
+        <p class="subpara">This program prints the numbers in the Fibonacci series.</p>
+
+        <div class="code-section">
+            <h2 class="sticky-h2">FibonacciSeries.py</h2>
+        <pre class="code-block">
+<code>series_Length = int(input("How many numbers do you want in the Fibonacci series: "))
+temp = 0
+previous_Result = 0
+current_Result = 1
+
+for i in range(1, series_Length):
+    if i == 1:
+        print(previous_Result)
+    print(current_Result)
+    temp = current_Result
+    current_Result = previous_Result + current_Result
+    previous_Result = temp
+</code>
+</pre>
+</div>
+<p class="subpara">This can also be done using <span class="codeWord">Lists</span> and <span class="codeWord">'append()'</span> function:</p>
+
+<div class="code-section">
+    <h2 class="sticky-h2">FibonacciSeriesUsingLists.py</h2>
+<pre class="code-block">
+<code>series_Length = int(input("How many numbers do you want in the Fibonacci series: "))
+seriesList = [0,1]
+
+for i in range(0, series_Length):
+    seriesList.append(seriesList[-1] + seriesList[-2])
+    print(seriesList[i])
+</code>
+</pre>
+</div>
+    </section>
+    <section>
+        <div class="code-section">
+            <h2 class="sticky-h2_">Example Output</h2>
+        <pre class="result-block">
+<code><span class="specialcode">#Example: user enters 10!</span>
+
+<span class="specialcode2">></span> How many numbers do you want in the Fibonacci series: <span class="specialcode">10</span>
+<span class="specialcode2">></span> 0
+<span class="specialcode2">></span> 1
+<span class="specialcode2">></span> 1
+<span class="specialcode2">></span> 2
+<span class="specialcode2">></span> 3
+<span class="specialcode2">></span> 5
+<span class="specialcode2">></span> 8
+<span class="specialcode2">></span> 13
+<span class="specialcode2">></span> 21
+<span class="specialcode2">></span> 34
+</code>
+</pre>
+</div>
+    </section>
+</body>
+
+</html>
